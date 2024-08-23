@@ -1,0 +1,50 @@
+Overview
+This report provides a detailed overview of the object detection project implemented using Detectron2. It covers the functionalities, components, and dependencies used in the project.
+
+Functionality
+Object Detection: The primary functionality of the project is to detect objects within images using the Detectron2 library.
+
+Installation Script: The installation script (installation.sh) automates the installation process by installing required dependencies and setting up Detectron2.
+
+Prediction Model Setup: The prediction_model.py script initializes and configures the prediction model using Detectron2. It sets up the model's configuration, loads pre-trained weights, and configures inference parameters.
+
+Object Detection Script: The main.py script is responsible for performing object detection on images. It downloads images from provided URLs, processes them using the prediction model, and displays the results.
+
+Execution Script: The execution script (run.sh) simplifies the process of running object detection by taking the image URL as input and executing the main script.
+
+Components
+Installation Script (installation.sh):
+
+Installs PyYAML, Detectron2, PyTorch, TorchVision, and OpenCV dependencies.
+Clones the Detectron2 repository and installs it.
+Prediction Model Setup (prediction_model.py):
+
+Initializes a Detectron2 configuration.
+Sets model parameters such as score threshold and number of classes.
+Loads pre-trained weights for the object detection model.
+Object Detection Script (main.py):
+
+Defines functions for detecting objects in images.
+Downloads images from provided URLs.
+Processes images using the prediction model.
+Displays images with bounding boxes around detected objects.
+Execution Script (run.sh):
+
+Accepts an image URL as input.
+Executes the main script with the provided URL.
+Dependencies
+PyYAML: Required for reading and writing YAML files.
+Detectron2: The primary library used for object detection.
+PyTorch: Provides deep learning functionalities, used as a backend for Detectron2.
+TorchVision: Used for various computer vision tasks, including image transformations.
+OpenCV: Used for image processing and display.
+
+
+
+
+
+
+
+
+
+
